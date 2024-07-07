@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulan Ketiga</title>
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="dist/css/style.css">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  <script>
+    document.documentElement.classList.add('js')
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+
+
+
+</head>
+
+<body class="dark:bg-neutral-950">
+
+
+
+  <header
+    class="flex fixed flex-wrap sm:justify-start shadow-md lg:py-4 sm:flex-nowrap z-50 w-full bg-white border-b border-gray-200 text-sm py-3 sm:py-0 dark:bg-neutral-900 dark:border-neutral-700">
+    <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
+      aria-label="Global">
+      <div class="flex items-center justify-between">
+        <a class="flex-none text-xl font-semibold dark:text-white" href="index.html?page=#activity"
+          aria-label="Brand"><span
+            class="inline-flex justify-center items-center size-[46px] rounded-full border border-gray-200 bg-white text-gray-700 shadow-sm dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 hover:bg-primary hover:text-white dark:hover:bg-neutral-700 ">
+            <svg class="flex-shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </span></a>
+        <div class="sm:hidden">
+          <button type="button"
+            class="hs-collapse-toggle size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700"
+            data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation"
+            aria-label="Toggle navigation">
+            <svg class="hs-collapse-open:hidden size-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+            <svg class="hs-collapse-open:block flex-shrink-0 hidden size-4" width="16" height="16" fill="currentColor"
+              viewBox="0 0 16 16">
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="navbar-collapse-with-animation"
+        class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-end sm:ps-7">
+          <a class="py-3 ps-px sm:px-3 font-medium text-base text-black dark:text-white hover:text-primary dark:hover:text-neutral-500"
+            href="index.html?page=#home" aria-current="page">About me</a>
+          <a class="py-3 ps-px sm:px-3 font-medium text-base text-black dark:text-white hover:text-primary  dark:hover:text-neutral-500"
+            href="index.html?page=#profileBps">Profile Instansi</a>
+          <a class="py-3 ps-px sm:px-3 font-medium text-base text-primary underline hover:text-primary  dark:hover:text-neutral-500"
+            href="index.html?page=#activity">Activity</a>
+          <a class="py-3 ps-px sm:px-3 font-medium text-base text-black dark:text-white hover:text-primary  dark:hover:text-neutral-500"
+            href="index.html?page=#contact">Contact</a>
+          <div
+            class="py-3 pl-6 ps-px sm:px-3 font-medium text-base text-black dark:text-white hover:text-primary  dark:hover:text-neutral-500">
+            <div class="flex items-center sm:dark:text-neutral-100 md:dark:text-neutral-100">
+              <!-- Toggle Switch Input -->
+              <input data-hs-theme-switch="" class="hidden" type="checkbox" id="dark-toggle">
+
+              <!-- Label for Toggle Switch -->
+              <label for="dark-toggle" class="relative flex items-center cursor-pointer">
+                <!-- SVG Icon for Light Mode -->
+                <svg
+                  class="gap-x-2 icon light-icon transition lg:dark:text-white duration-300 ease-in-out sm:dark:text-neutral-100 md:dark:text-neutral-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+
+                <!-- SVG Icon for Dark Mode (Initially hidden) -->
+                <svg
+                  class="dark-icon dark:block hidden lg:dark:text-white duration-300 ease-in-out sm:dark:text-neutral-100 md:dark:text-neutral-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+              </label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <div class="max-w-4xl px-4 pt-28 dark:text-white pb-12 sm:px-6  mx-auto">
+    <div class="max-w-3xl">
+      <div class="flex justify-between items-center mb-6 ">
+        <div class="flex w-full sm:items-center gap-x-5 sm:gap-x-3">
+          <div class="flex-shrink-0">
+            <img class="size-12 rounded-full" src="dist/img/latar merah undiksha.jpg" alt="Image Description">
+          </div>
+
+          <div class="grow">
+            <div class="flex justify-between items-center gap-x-2">
+              <div>
+                <!-- Tooltip -->
+                <div class="hs-tooltip [--trigger:hover] [--placement:bottom] inline-block">
+                  <div class="hs-tooltip-toggle sm:mb-1 block text-start cursor-pointer">
+                    <span class="font-semibold text-gray-800 dark:text-neutral-200">
+                      Gede Agus Supriatmaja
+                    </span>
+
+                    <!-- Dropdown Card -->
+                    <div
+                      class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 max-w-xs cursor-default bg-gray-900 divide-y divide-gray-700 shadow-lg rounded-xl dark:bg-neutral-950 dark:divide-neutral-700"
+                      role="tooltip">
+                      <!-- Body -->
+                      <div class="p-4 sm:p-5">
+                        <div class="mb-2 flex w-full sm:items-center gap-x-5 sm:gap-x-3">
+                          <div class="flex-shrink-0">
+                            <img class="size-8 rounded-full" src="dist/img/latar merah undiksha.jpg"
+                              alt="Image Description">
+                          </div>
+
+                          <div class="grow">
+                            <p class="text-lg font-semibold text-gray-200 dark:text-neutral-200">
+                              Gede Agus Supriatmaja
+                            </p>
+                          </div>
+                        </div>
+                        <p class="text-sm text-gray-400 dark:text-neutral-400">
+                          Mahasiswa Sistem Informasi Universitas Pendidikan Ganesha
+                        </p>
+                      </div>
+                      <!-- End Body -->
+
+                      <!-- Footer -->
+                      <div class="flex justify-between items-center px-4 py-3 sm:px-5">
+                        <!-- <ul class="text-xs space-x-3">
+                          <li class="inline-block">
+                            <span class="font-semibold text-gray-200 dark:text-neutral-200">56</span>
+                            <span class="text-gray-400 dark:text-neutral-400">articles</span>
+                          </li>
+                          <li class="inline-block">
+                            <span class="font-semibold text-gray-200 dark:text-neutral-200">1k+</span>
+                            <span class="text-gray-400 dark:text-neutral-400">followers</span>
+                          </li>
+                        </ul> -->
+
+                        <div>
+                          <a href="https://github.com/agussupriatmaja08" target="_blank">
+                            <button type="button"
+                              class="py-1.5 px-2.5 inline-flex items-center gap-x-2 text-xs font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+                              <svg class="h-4 w-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                              </svg>
+                              Github
+                            </button>
+                          </a>
+                        </div>
+
+                      </div>
+                      <!-- End Footer -->
+                    </div>
+                    <!-- End Dropdown Card -->
+                  </div>
+                </div>
+                <!-- End Tooltip -->
+
+                <ul class="text-xs text-gray-500 dark:text-neutral-500">
+                  <li
+                    class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
+                    30 Apr 2024
+                  </li>
+
+                </ul>
+              </div>
+
+              <!-- Button Group -->
+              <div>
+                <a href="https://github.com/agussupriatmaja08" target="_blank">
+                  <button type="button"
+                    class="py-1.5 px-2.5 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
+                    <svg class="h-5 w-5 text-black-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                    Github
+                  </button>
+                </a>
+              </div>
+              <!-- End Button Group -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Blog Article -->
+
+      <!-- Avatar Media -->
+
+      <!-- End Avatar Media -->
+
+      <!-- Content -->
+      <div class="space-y-5 md:space-y-8">
+        <div class="space-y-3">
+          <h2 class="text-2xl font-bold md:text-3xl dark:text-white">Aktivitas Magang Bulan Ketiga</h2>
+
+          <p class="text-md text-gray-800 dark:text-neutral-200 text-justify pt-2 pb-10">
+            Bulan April merupakan bulan yang menandai kami memasuki tahap lanjut dalam kegiatan magang di BPS Buleleng.
+            Selama periode ini, kami secara aktif terlibat dalam serangkaian aktivitas yang meliputi pengembangan
+            proyek, diskusi intensif dengan mentor dan pimpinan untuk membahas kemajuan desain website, pengembangan UI
+            untuk administrasi, serta melakukan pengembangan fokus bagian backend administratif.
+          </p>
+        </div>
+
+        <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+          <p class="md:text-2xl sm:text-xl  font-bold text-xl  mb-4 dark:text-white" data-aos="fade-up"
+            data-aos-once="true" data-aos-duration="500">Pengembangan Backend </p>
+          <figure>
+            <img class="w-full object-cover rounded-xl  h-[350px]" src="dist/img/backend.jpg" alt="Image Description">
+            <figcaption class="mt-3 text-sm text-center text-neutral-600 dark:text-neutral-200">
+              Pengembangan Backend Sosial, Umum, dan Distribusi.
+            </figcaption>
+          </figure>
+          <p class="text-md text-gray-800 dark:text-neutral-200 text-justify pt-5">
+
+            Pengembangan backend pada bagian Sosial, Umum, dan Distribusi merupakan fokus utama saya dalam mengembangkan
+            proyek Monalisa. Dalam tahap ini, saya bertanggung jawab untuk merancang dan mengimplementasikan
+            fungsi-fungsi yang mendukung operasional serta pengelolaan data terkait dengan bidang tersebut. Proses ini
+            melibatkan pemodelan database yang tepat, proses bisnis, dan integrasi sistem untuk memastikan kehandalan
+            dan konsistensi dalam pengolahan informasi yang diperlukan.
+
+
+          </p>
+
+        </div>
+
+        <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" class="pt-10">
+
+
+          <p class="md:text-2xl sm:text-xl  font-bold text-xl  mb-4 dark:text-white" data-aos="fade-up"
+            data-aos-once="true" data-aos-duration="500">Diskusi bersama mentor dan pimpinan</p>
+          <figure>
+            <img class="w-full object-cover rounded-xl h-[350px]" src="dist/img/IMG_0315.jpg" alt="Image Description">
+            <figcaption class="mt-3 text-sm text-center text-neutral-600 dark:text-neutral-200">
+              Diskusi bersama mentor dan pimpinan
+
+            </figcaption>
+          </figure>
+
+          <p class="text-md text-gray-800 dark:text-neutral-200 text-justify pt-5">
+            Kami juga aktif dalam melakukan diskusi rutin dengan mentor dan pimpinan kami terkait progres desain website
+            dan implementasi UI/UX. Diskusi ini membantu kami memahami sejauh mana proyek telah berjalan. Namun,
+            pimpinan tiba-tiba mengarahkan kami untuk fokus mengembangkan website pada bagian fitur administrasi
+            terlebih dahulu, serta menjelaskan kebutuhan spesifik pada bagian administrasi. Setelah fitur administrasi
+            selesai, pimpinan menyetujui untuk melanjutkan pengembangan website pada fitur teknis yang telah
+            direncanakan. Dalam diskusi tersebut, kami setuju untuk fokus pada bagian administrasi, sehingga saat ini
+            proyek web kami memiliki dua fitur utama: fitur teknis dan administrasi.
+
+          </p>
+        </div>
+
+        <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" class="pt-10">
+
+          <p class="md:text-2xl sm:text-xl  font-bold text-xl  mb-4 dark:text-white" data-aos="fade-up"
+            data-aos-once="true" data-aos-duration="500">Mendesain Database Administrasi</p>
+          <figure>
+            <img class="w-full object-cover rounded-xl h-[350px]" src="dist/img/desain-uiux.jpg"
+              alt="Image Description">
+            <figcaption class="mt-3 text-sm text-center text-neutral-600 dark:text-neutral-200"">
+              Mendesain Database Administrasi           </figcaption>
+          </figure>
+
+          <p class=" text-md text-gray-800 dark:text-neutral-200 text-justify pt-5">
+              Merancang database untuk bagian administrasi merupakan langkah krusial dalam pengembangan proyek website.
+              Proses ini dimulai dengan melakukan analisis mendalam terhadap kebutuhan data yang spesifik untuk bagian
+              administrasi. Kami mengidentifikasi entitas-entitas utama yang perlu disimpan dalam database, seperti
+              informasi pengguna, data transaksi, dan pengaturan sistem. Selanjutnya, kami merancang struktur database
+              dengan mempertimbangkan hubungan antar entitas, atribut-atribut yang relevan, dan integritas data yang
+              harus dijaga.
+              </p>
+              <p class=" text-md text-gray-800 dark:text-neutral-200 text-justify pt-5">
+
+                Setelah merancang struktur dasar, langkah berikutnya adalah membuat diagram Entity-Relationship (ERD)
+                yang
+                menggambarkan entitas, relasi, dan atribut dalam bentuk visual. ERD membantu kami untuk lebih memahami
+                dan
+                mengkomunikasikan desain database kepada tim pengembangan lainnya.
+
+              </p>
+
+        </div>
+
+
+
+
+        <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" class="pt-10">
+
+          <p class="md:text-2xl sm:text-xl  font-bold text-xl  mb-4 dark:text-white" data-aos="fade-up"
+            data-aos-once="true" data-aos-duration="500">Pengembangan Backend Administrasi</p>
+          <figure>
+            <img class="w-full object-cover rounded-xl h-[350px]" src="dist/img/back-admin.jpg" alt="Image Description">
+            <figcaption class="mt-3 text-sm text-center text-neutral-600 dark:text-neutral-200"">
+              Pengembangan Backend Administrasi          </figcaption>
+          </figure>
+
+          <p class=" text-md text-gray-800 dark:text-neutral-200 text-justify pt-5">
+              Kegiatan selanjutnya adalah pengembangan backend pada fitur Administrasi, yang melibatkan beberapa tahapan
+              penting. Pertama, kami memulai dengan merancang database yang tepat untuk fitur administrasi, memastikan
+              struktur data yang efisien dan terorganisir. Selanjutnya, kami mengimplementasikan logika proses bisnis
+              yang diperlukan agar sistem administrasi dapat berjalan dengan lancar, termasuk alur kerja, validasi data,
+              dan pengaturan aturan bisnis yang relevan. Terakhir, kami mengembangkan sistem autentikasi yang aman untuk
+              mengelola akses pengguna ke fitur administrasi, termasuk manajemen sesi dan pengaturan peran pengguna.
+              Dengan pendekatan ini, kami memastikan bahwa fitur administrasi tidak hanya berfungsi dengan baik tetapi
+              juga dapat diandalkan dalam operasionalnya.
+
+              </p>
+
+
+
+
+        </div>
+        <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" class="pt-16 pb-14">
+          <p class="md:text-4xl sm:text-3xl text-center font-bold text-3xl  mb-4 dark:text-white" data-aos="fade-up"
+            data-aos-once="true" data-aos-duration="500">Kesimpulan</p>
+
+          </figure>
+          <p class="text-md text-gray-800 dark:text-neutral-200 text-justify pt-5">
+            Magang ketiga di BPS Buleleng pada bulan April telah memberikan pengalaman dan pengetahuan yang berharga
+            bagi kami. Selama periode ini, kami terlibat aktif dalam pengembangan proyek Monalisa dengan fokus utama
+            pada pengembangan backend untuk bagian Sosial, Umum, dan Distribusi. Proses ini melibatkan pemodelan
+            database, implementasi fungsi-fungsi penting, dan integrasi sistem untuk memastikan kehandalan dan
+            konsistensi dalam pengolahan data.
+          </p>
+          <p class="text-md text-gray-800 dark:text-neutral-200 text-justify pt-5">
+
+            Selain itu, kami juga melakukan diskusi rutin dengan mentor dan pimpinan mengenai progres desain website
+            serta implementasi UI/UX. Meskipun ada perubahan mendadak yang mengarahkan kami untuk fokus pada
+            pengembangan fitur administrasi terlebih dahulu, hal ini memberikan wawasan yang lebih dalam mengenai
+            kebutuhan spesifik pada bagian administrasi dan pentingnya keselarasan dengan visi proyek.
+            <p class="text-md text-gray-800 dark:text-neutral-200 text-justify pt-5">
+
+              Kegiatan kami selama magang ini juga mencakup merancang database untuk fitur administrasi dengan struktur
+              data yang efisien, implementasi logika proses bisnis, dan pengembangan sistem autentikasi yang aman. Semua
+              ini tidak hanya meningkatkan keterampilan teknis kami tetapi juga memperluas pemahaman kami tentang
+              bagaimana sebuah proyek besar diimplementasikan dan dikelola dalam lingkungan yang nyata.
+            </p>
+            <p class="text-md text-gray-800 dark:text-neutral-200 text-justify pt-5">
+
+              Secara keseluruhan, magang ketiga ini telah memberikan kami perspektif yang lebih luas tentang dunia
+              profesional dan kontribusi yang dapat kami berikan dalam pengembangan sistem informasi yang kompleks dan
+              berdampak besar.
+            </p>
+
+        </div>
+
+
+      </div>
+
+      <p class="text-4xl text-center mb-7 mt-20" data-aos="fade-up" data-aos-once="true">"Masa depan tidak datang dengan
+        menyalah-nyalahkan masa lalu" </p>
+      <p class="kutipan text-center text-2xl mb-20" data-aos="fade-up" data-aos-once="true">– Rocky Gerung</p>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="w-full bg-dark lg:flex pt-20">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+            <h2 class=" font-bold text-4xl text-white">DeAgus</h2>
+            <h3 class=" mt-6 font-bold text-2xl mb-2 text-white">Hubungi</h3>
+            <p>guarinnn92726@gmail.com</p>
+            <p>085158449281</p>
+
+            <p> <a target="_blank " class="hover:text-primary"
+                href="https://www.google.com/maps/place/Sulang,+Kec.+Dawan,+Kabupaten+Klungkung,+Bali/@-8.5289813,115.3918512,14z/data=!3m1!4b1!4m10!1m2!2m1!1sJalan+Desa+Sulang,+Kec.+Dawan,+Kab.+Klungkung,+Bali!3m6!1s0x2dd211a0d5b44619:0x5030bfbca8322b0!8m2!3d-8.5298669!4d115.4267079!15sCjNKYWxhbiBEZXNhIFN1bGFuZywgS2VjLiBEYXdhbiwgS2FiLiBLbHVuZ2t1bmcsIEJhbGmSARRhZG1pbmlzdHJhdGl2ZV9hcmVhNOABAA!16s%2Fg%2F121pkfff?entry=ttu">
+                Jalan Desa Sulang, Kec. Dawan, Kab. Klungkung, Bali</a></p>
+          </div>
+
+          <!-- <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+                          <h2 class=" font-bold text-xl"></h2>
+                          <h3 class=" mt-16 font-bold text-2xl mb-2">Alamat</h3>
+                          <p> <a target="_blank " class="hover:text-primary"
+                                  href="https://www.google.com/maps/place/Sulang,+Kec.+Dawan,+Kabupaten+Klungkung,+Bali/@-8.5289813,115.3918512,14z/data=!3m1!4b1!4m10!1m2!2m1!1sJalan+Desa+Sulang,+Kec.+Dawan,+Kab.+Klungkung,+Bali!3m6!1s0x2dd211a0d5b44619:0x5030bfbca8322b0!8m2!3d-8.5298669!4d115.4267079!15sCjNKYWxhbiBEZXNhIFN1bGFuZywgS2VjLiBEYXdhbiwgS2FiLiBLbHVuZ2t1bmcsIEJhbGmSARRhZG1pbmlzdHJhdGl2ZV9hcmVhNOABAA!16s%2Fg%2F121pkfff?entry=ttu">
+                                  Jalan Desa Sulang, Kec. Dawan, Kab. Klungkung, Bali</a></p>
+                      </div> -->
+
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3 pl-5">
+            <h2 class=" font-bold text-xl  mt-16 mb-5 text-white">Tautan</h2>
+            <ul class="text-slate-300 mb-3">
+              <li><a href="index.html" class="hover:text-primary  text-base">Beranda</a></li>
+            </ul>
+            <ul class="text-slate-300 mb-3">
+              <li><a href="index.html?page=#home" class="hover:text-primary  text-base">Tentang saya</a></li>
+            </ul>
+            <ul class="text-slate-300 mb-3">
+              <li><a href="index.html?page=#profileBps" class="hover:text-primary  text-base">Profile BPS</a></li>
+            </ul>
+            <ul class="text-slate-300 mb-3">
+              <li><a href="index.html?page=#activity" class="hover:text-primary  text-base">Kegiatan Magang</a></li>
+            </ul>
+            <ul class="text-slate-300 mb-3">
+              <li><a href="index.html?page=#contact" class="hover:text-primary  text-base">Kontak</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="mt-2 border-t w-full border-slate-700 ">
+          <div class="flex items-center mt-6 w-full justify-center">
+            <a href="https://instagram.com/_daguss?utm_source=qr&igshid=YzU1NGVlODEzOA==" target="_blank"
+              class="w-9 h-9  mx-2 rounded-full border flex items-center justify-center hover:border-primary hover:bg-primary opacity-60 hover:opacity-100 transition duration-300 ease-in-out">
+              <svg role="img" width="10" class="fill-current lg:w-5 text-white" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <title>Instagram</title>
+                <path
+                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+              </svg> </a>
+            <a href="https://www.linkedin.com/in/gede-agus-supriatmaja-9268602a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              class="w-9 h-9 mr-2 mx-2 rounded-full border flex items-center justify-center hover:border-primary hover:bg-primary hover:text-white opacity-60 hover:opacity-100 transition duration-300 ease-in-out">
+              <svg role="img" viewBox="0 0 24 24" class="fill-current lg:w-5 text-white " width="10"
+                xmlns="http://www.w3.org/2000/svg">
+                <title>LinkedIn</title>
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+
+          </div>
+          <p class="mt-5 mb-5 text-sm font-medium text-slate-500 text-center">Dibuat oleh <span><a
+                href="https://instagram.com/_daguss?utm_source=qr&igshid=YzU1NGVlODEzOA==" target="_blank "
+                class="text-primary">Gede Agus Supriatmaja</a> </span> dengan <a href="https://tailwindcss.com/"
+              target="_blank" class="text-primary">Tailwind CSS</a> |
+            2024</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+</body>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+<!-- <script src="node_modules/preline/dist/preline.js"></script> -->
+<!-- <script src="dist/js/preline.js"></script> -->
+
+<script src="dist/js/app.js"></script>
+<script src="dist/js/script.js"></script>
+<script src="dist/js/preline.js"></script>
+
+</html>
