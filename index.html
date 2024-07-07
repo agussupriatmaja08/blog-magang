@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -56,7 +57,8 @@
             height: 100%;
             overflow: hidden;
             display: flex;
-            z-index: 1; /* Tambahkan z-index rendah untuk background */
+            z-index: 1;
+            /* Tambahkan z-index rendah untuk background */
             background-color: rgba(0, 0, 0, 0.4);
 
         }
@@ -78,15 +80,17 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            z-index: 2; /* Tambahkan z-index tinggi untuk teks */
-            color: white; /* Pastikan warna teks putih */
-          
+            z-index: 2;
+            /* Tambahkan z-index tinggi untuk teks */
+            color: white;
+            /* Pastikan warna teks putih */
+
         }
 
         .slide.overlay {
             background-color: rgba(0, 0, 0, 0.4);
         }
-    </style>  
+    </style>
 
 
 
@@ -184,7 +188,7 @@
 
     <section id="background-section" class="w-full h-screen flex items-center justify-center text-white relative">
         <div class="slideshow-container" id="background-all">
-           
+
 
             <div class="slide overlay" style="background-image: url('dist/img/bps.png');"></div>
             <div class="slide overlay" style="background-image: url('dist/img/presen.png');"></div>
@@ -196,14 +200,18 @@
         <div id="tengah">
             <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
                 <h2 id="parallax-text" class="text-3xl lg:text-4xl font-bold text-center">
-                    <div class="mb-4 text-3xl md:text-3xl lg:text-5xl font-extrabold tracking-tight leading-none text-white">
+                    <div
+                        class="mb-4 text-3xl md:text-3xl lg:text-5xl font-extrabold tracking-tight leading-none text-white">
                         BLOG MAGANG
                     </div>
-                    <div class="md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-none text-white mt-3 mb-2 lg:mt-3 flex items-center font-sans justify-center" id="parallax-text2">
-                        <span class="text-blue-700 px-2">BADAN</span> <span class="text-green-600 px-2"> PUSAT</span> <span class="text-orange-400 px-2"> STATISTIK </span>
+                    <div class="md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-none text-white mt-3 mb-2 lg:mt-3 flex items-center font-sans justify-center"
+                        id="parallax-text2">
+                        <span class="text-blue-700 px-2">BADAN</span> <span class="text-green-600 px-2"> PUSAT</span>
+                        <span class="text-orange-400 px-2"> STATISTIK </span>
                         <br>
                     </div>
-                    <div class="mb-4 text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-none text-white" id="parallax-text3">BULELENG</div>
+                    <div class="mb-4 text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-none text-white"
+                        id="parallax-text3">BULELENG</div>
                 </h2>
             </div>
         </div>
@@ -232,7 +240,7 @@
                         <div class="ml-8 pt-1">
                             <span
                                 class="block font-bold m-auto  dark:text-neutral-100 text-primary text-xl md:text-2xl lg:text-3xl pb-3 ">Selamat
-                                datang di blog saya👋</span>
+                                datang di blog saya</span>
                             <span
                                 class="block font-bold m-auto dark:text-neutral-100 text-dark text-4xl md:text-4xl lg:text-5xl pb-3">
                                 Gede Agus Supriatmaja</span>
@@ -242,7 +250,8 @@
                             </h2>
                         </div>
                     </div>
-                    <p class=" mb-10 text-justify dark:text-neutral-200 lg:px-12">
+                    <br> <br>
+                    <p class=" mb-10 text-justify dark:text-neutral-200 lg:px-28">
 
                         Pada semester enam saya berkesempatan untuk mengikuti kegiatan magang di BPS Buleleng. Magang
                         tersebut memberikan
@@ -277,20 +286,21 @@
 
     <!-- About secstion start -->
     <section id="profileBps" class="section  mt-1 mb-10 pt-24 pb-32">
-        <div class="h-max container px-2 lg:px-10">
+        <div class="h-max container px-2 lg:px-16">
             <h4 class="font-bold text-primary   ml-4 mb-5  text-xl text-center ">Profile Instansi</h4>
-            <h4 class="font-bold text-dark  text-center ml-4 mb-16  lg:text-4xl text-3xl dark:text-neutral-200 ">Profil
+            <h4 class="font-bold text-dark  text-center ml-4 mb-12  lg:text-4xl text-3xl dark:text-neutral-200 ">Profil
                 BPS Buleleng</h4>
 
-            <div class="mb-10 content-center"> <img src="dist/img/halaman-bps.jpg" alt=""
-                    class="w-[50%] m-auto h-[50%] shadow-lg rounded-lg" width="200" data-aos="fade-up"
-                    data-aos-once="true" data-aos-duration="1000">
+            <div class="mb-10 content-center">
+               <a href="https://bulelengkab.bps.go.id/" target="_blank">  <img src="dist/img/halaman-bps - Copy.jpg" alt=""
+                    class="w-full m-auto h-[500px] shadow-lg rounded-sm transition-transform duration-500 hover:cursor-pointer"
+                    data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"></a>
                 <center>
                     <h1 class="font-bold lg:text-3xl text-2xl mt-7 text-primary" data-aos="fade-up" data-aos-once="true"
                         data-aos-duration="1000">Sedikit Tentang BPS Buleleng</h1>
                 </center>
-
             </div>
+
 
 
             <div class="flex flex-wrap" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
@@ -610,7 +620,7 @@
                         <!-- Right Content -->
                         <div class="grow pt-0.5 pb-2 mx-auto">
                             <!-- START DIV -->
-                            <a href="bulan-pertama.html" class="block w-full">
+                            <a href="bulan-kelima.html" class="block w-full">
                                 <div
                                     class="w-full lg:h-[350px] dark:bg-neutral-950 bg-white cursor-pointer shadow-sm mb-20 rounded-xl lg:flex md:block sm:block relative transition-transform duration-300 transform hover:scale-95">
                                     <div class="lg:w-2/5 md:w-full sm:w-full relative">
@@ -807,7 +817,7 @@
         slides.forEach(slide => {
             slide.style.transform = `translateX(${offset}%)`;
         });
-    }, 5000); // Ganti gambar setiap 3 detik
+    }, 4000); // Ganti gambar setiap 4 detik
 </script>
 
 <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->

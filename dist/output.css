@@ -924,6 +924,26 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   height: 100vh;
 }
 
+.h-\[0\%\] {
+  height: 0%;
+}
+
+.h-\[20\%\] {
+  height: 20%;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -958,6 +978,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[0\%\] {
+  width: 0%;
 }
 
 .max-w-3xl {
@@ -1152,6 +1176,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
 }
 
 .border {
@@ -1870,6 +1898,16 @@ body{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:scale-90:hover {
+  --tw-scale-x: .9;
+  --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
 .hover\:border-primary:hover {
   --tw-border-opacity: 1;
   border-color: rgb(29 78 216 / var(--tw-border-opacity));
@@ -2364,6 +2402,26 @@ body{
   .lg\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .lg\:text-2xl {
