@@ -608,6 +608,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   border-width: 0;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -757,10 +761,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   margin-left: 0.5rem;
 }
 
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
 .ml-4 {
   margin-left: 1rem;
 }
@@ -899,10 +899,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   height: 2.25rem;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
 .h-\[350px\] {
   height: 350px;
 }
@@ -922,6 +918,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .h-max {
   height: -moz-max-content;
   height: max-content;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-32 {
@@ -1236,14 +1236,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
-}
-
 .fill-current {
   fill: currentColor;
 }
@@ -1479,10 +1471,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   font-weight: 500;
 }
 
-.font-normal {
-  font-weight: 400;
-}
-
 .font-semibold {
   font-weight: 600;
 }
@@ -1531,11 +1519,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .text-gray-200 {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
-}
-
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .text-gray-400 {
@@ -2368,11 +2351,6 @@ body{
     padding-right: 3rem;
   }
 
-  .lg\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -2406,16 +2384,6 @@ body{
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .lg\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
-  .lg\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .lg\:text-lg {
