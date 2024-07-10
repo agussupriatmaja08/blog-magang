@@ -809,6 +809,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   margin-top: 1.75rem;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .block {
   display: block;
 }
